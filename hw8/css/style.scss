@@ -1,0 +1,271 @@
+html {
+  height: 100%;
+  // scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 320px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  // -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // -webkit-tap-highlight-color: transparent; 
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+span,
+button,
+b {
+  display: inline-block;
+}
+
+b {
+  font-weight: normal;
+}
+
+i {
+  font-style: normal;
+}
+
+input,
+button,
+textarea {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.content {
+  max-width: 1055px;
+  width: 100%;  
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding-top: 10px;
+  margin-bottom: 50px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #767272;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    img {
+      height: 20px;
+      width: 20px;  
+    }
+  }
+}
+.main-slider {
+  margin-bottom: 32px;
+  .swiper-slide {
+    padding-bottom: 50%;
+    background-size: contain !important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+  }
+}
+
+.main-search {
+  background: #FFFFFF;
+  border: 1px solid #DDDADA;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 23px;
+  margin-bottom: 30px;
+  &__left {
+
+    width: 80%;
+    .main-label {
+      display: flex;
+      align-items: center;
+    }
+    .ico {
+      height: 20px;
+      width: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #0E49B5;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        background: lighten(#0E49B5,  0.3);
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .filter  {
+      margin-right: 13px;
+    }
+  }
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 50px;
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 15px;
+  }
+  &__favorite{
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  &__img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 7px;
+  }
+  &__stock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .ico {
+      margin-right: 5px;
+    }
+    .count {
+      margin-right: 5px;
+    }
+  }
+  &__price {
+    margin-bottom: 17px;
+    span {
+      color: #767272;
+      font-weight: 700;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background: #0E49B5;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  &__bottom {
+    width: 100%;
+    // margin: -10px -10px -30px -10px;
+    padding: 20px 15px 30px 15px;
+    background: #DAE2EA;
+    border-radius: 0px 0px 10px 10px;
+    .card__reviews {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .reviews {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      .ico {
+        display: flex;
+        margin-right: 13px;
+      }
+      .percent {
+        margin-right: 5px;
+      }
+    }
+    .card__above {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .avarage {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .card {
+    width: 46%;
+  }
+}
