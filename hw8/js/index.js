@@ -63,7 +63,13 @@ const renderCard = (device) => {
       <div class="card__price">
         Price: <span>${device.price}</span> $
       </div>
-      <button class="card__btn">Add to cart</button>
+      ${ device.orderInfo.inStock >= 1 ? `
+          <button class="card__btn">Add to cart</button>
+        ` : `
+          <button class="card__btn disabled">Add to cart</button>
+        `
+      }
+      
     </div>
     <div class="card__bottom">
       <div class="card__reviews ">
