@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>MacOutlet</title>
+</head>
+
+<body>
+
+    <div class="content">
+
+
+        <header class="header">
+            <div class="header__wrapper">
+
+                <div class="header__logo">
+                    <img src="img/icons/logo.png" alt="logo">
+                </div>
+
+                <div class="header__cart">
+                    <div class="header__cart-btn">
+                        <img src="img/icons/cart.svg" alt="cart">
+
+                        <div class="cart__count">1</div>
+                    </div>
+ 
+
+                    <div class="header__cart-total">
+                        <div class="total__title">Shopping Cart</div>
+                        <div class="total__descr">Checkout is almost done!</div>
+
+                        <div class="total__items">
+                            
+                        </div>
+                        <div class="total__info-price">
+                            <div class="total__amount">Total amount: <b>3 ptc.</b></div>
+                            <div class="total__price">Total price: <b>1699$</b> </div>
+                        </div>
+                        <div class="total__buy">Buy</div>
+                    </div>
+                </div>
+                <!-- <input type="text" placeholder="enter device name..." id="deviceInp">
+
+            <select id="sortDevices">
+                <option value="def">Default</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select> -->
+            </div>
+        </header>
+
+
+        <section class="main-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url('img/banners/air_pods_max_banner.jpg');"></div>
+                    <div class="swiper-slide" style="background: url('img/banners/airpods_pro_banner.png');"></div>
+                    <div class="swiper-slide" style="background: url('img/banners/apple_tv_banner.png');"></div>
+                    <div class="swiper-slide" style="background: url('img/banners/ipad_air_banner.jpg');"></div>
+                    <div class="swiper-slide" style="background: url('img/banners/iphone_12_banner.jpg');"></div>
+                    <div class="swiper-slide" style="background: url('img/banners/mac_book_banner.jpg');"></div>
+                    <div class="swiper-slide" style="background: url('img/banners/watch_banner.jpg');"></div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+
+        <div class="main-search">
+            <div class="main-search__left">
+                <label for="main-search" class="main-label">
+                    <div class="ico">
+                        <img src="img/icons/search.svg" alt="search">
+                    </div>
+                    <input type="text" id="main-search" placeholder="Enter device name...">
+                </label>
+            </div>
+
+            <div class="main-search__right">
+                <div class="btn filter">
+                    <img src="img/icons/filter.svg" alt="filter">
+                </div>
+                <div class="btn settings">
+                    <img src="img/icons/settings.svg" alt="filter">
+                </div>
+            </div>
+        </div>
+
+
+
+        <main class="cards">
+            <aside class="filter-container">
+            </aside>
+
+            <div class="items-card"></div>
+
+        </main>
+
+        <div class="modal-append"></div>
+
+
+
+
+
+
+
+
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/items.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
